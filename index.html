@@ -20,11 +20,11 @@
 <body>
     <div class="main-container">
         <header>
-            <nav class="nav">
+            <nav class="header-nav">
                 <a href="#"><img class="logo" src="images/logo/Booki.png" alt="logo de Booki"></a>
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">Hébergements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Activités</a></li>
+                <ul class="header-nav-list">
+                    <li><a class="header-nav-link" href="#">Hébergements</a></li>
+                    <li><a class="header-nav-link" href="#">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,6 +39,7 @@
                         <i class="search-icon fa-solid fa-location-dot"></i>
                     </div>
                     <input class="search-text" type="text" name="ville" placeholder="Marseille, France">
+                    <i class="icon-search fa-sharp fa-solid fa-magnifying-glass"></i>
                     <input class="search-btn" type="submit" value="Rechercher">
                 </form>
                 <div class="filter-bar">
@@ -213,6 +214,14 @@
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
+                                    <div class="responsive card-rating">
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -232,6 +241,14 @@
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
+                                    <div class="responsive card-rating">
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -249,6 +266,14 @@
                                         <i class="fa-xs fa-solid fa-star icon-color-blue" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star icon-color-blue" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                    <div class="responsive card-rating">
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="icon-color-blue fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
@@ -286,10 +311,29 @@
                         </article>
                     </a>
                 </div>
-            </section>
-            
+            </section>   
         </main>
-        <footer></footer>
+
+        <footer>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><h3>À propos</h3></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Fonctionnement du site</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Conditions générales</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Données et confidentialité</a></li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><h3>Nos hébergements</h3></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Charte qualité</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Proposer votre hôtel</a></li>
+                </ul>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><h3>Assistance</h3></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Centre d'aide</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="#">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </footer>
     </div>
 </body>
 
