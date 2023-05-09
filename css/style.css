@@ -9,10 +9,6 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -46,13 +42,12 @@ body {
     list-style-type: none;
 }
 
-
 .header-nav-link {
     color: black;
     text-decoration: none;
     padding-top: 14px;
     width: 7em;
-    height: 1.188em;
+    height: 1.12em;
     margin-left: 56px;
 }
 
@@ -61,41 +56,34 @@ body {
     color: var(--main-color);
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
 /*********** Formulaire ***********/
 
 .search-bar {
-    width: 23.563em;
-    height: 3.063em;
-    border: solid 1px var(--main-bg-color);
-    border-radius: 15px;
     margin-top: 40px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .search-contain-icon {
-    position: relative;
-    width: 3.125em;
-    height: 3.063em;
+    width: 50px;
+    height: 50px;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-}
-
-.search-icon {
-    position: absolute;
-    left: 18px;
-    top: 15px;
-    width: 0.875em;
-    height: 1.125em;
+    line-height: 50px;
+    text-align: center;
 }
 
 .search-text {
-    border-style: none;
-    width: 9.188em;
-    height: 1.313em;
-    font-size: 1.125em;
-    vertical-align: middle;
+    height: 48px;
+    font-size: 1.13em;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 0 0 10px;
 }
 
 .search-text:focus {
@@ -108,12 +96,17 @@ body {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 1.125em;
-    padding: 15px 16px;
-    border-radius: 0 15px 15px 0;
+    padding: 0 15px;
+    border-radius: 0 12px 12px 0;
+    height: 50px;
 }
 
 .search-btn:hover {
     cursor: pointer;
+}
+
+.search-icon {
+    color: black;
 }
 
 .icon-search {
@@ -122,11 +115,16 @@ body {
 
 .filter-bar {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 15px;
-    width: 47.375em;
-    height: 3.125em;
+    height: 4em;
     margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.filter-list {
+    display: flex;
+    gap: 20px;
 }
 
 .filter-contain-text {
@@ -138,7 +136,7 @@ body {
     display: flex;
     background-color: white;
     border: solid 2px #d9d9d9;
-    height: auto;
+    height: 40px;
     border-radius: 25px;
     padding: 4px 19px;
     align-items: center;
@@ -154,19 +152,21 @@ body {
     color: var(--main-color);
 }
 
-.icon-filter {
-    width: 1.375em;
-    height: 1.125em;
+.filter-text {
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 .filter-btn-text {
-    font-size: 1.1em;
+    font-size: 0.9em;
+    font-weight: 700;
 }
 
 .info-contain {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .info-icon-box {
@@ -178,11 +178,6 @@ body {
     text-align: center;
 }
 
-
-.section-title {
-    margin: 0;
-    font-size: 1.375em;
-}
 
 /**************** Cards *************/
 
@@ -357,32 +352,37 @@ body {
 
 .activities-cards {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
 
 .activities-cards-click {
     display: flex;
     text-decoration: none;
-    width: 30%;
+    flex: 1;
 }
 
 .activities-cards .card {
     padding: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .activities-cards img {
     width: 100%;
     height: 23.75em;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .activities-cards h3 {
     color: black;
     padding-left: 5px;
+}
+
+.title-link {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
 }
 
 
@@ -524,32 +524,20 @@ footer {
         text-align: end;
     }
 
+    .header-nav-link:hover {
+        border-right: solid 2px var(--main-color);
+        border-top: none;
+        padding-right: 10px;
+        padding-top: 0;
+    }
+
     .search-bar {
         display: flex;
         width: 100%;
     }
-
-    .search-contain-icon {
-        display: none;
-    }
-
-    .icon-search {
-        display: block;
-        border-style: none;
-        background-color: var(--main-color);
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 1em;
-        padding: 15px 16px;
-        border-radius: 0 15px 15px 0;
-    }
     
     .icon-search:hover {
         cursor: pointer;
-    }
-
-    .search-btn {
-        display: none;
     }
 
     .filter-bar {
@@ -559,12 +547,9 @@ footer {
         height: fit-content;
     }
 
-    .filter-contain-text {
-        display: none;
-    }
-
-    .info-icon-box {
-        display: none;
+    .filter-list {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .hebergements {
@@ -610,8 +595,9 @@ footer {
     
     .activities-cards-click {
         display: flex;
+        flex-wrap: wrap;
         text-decoration: none;
-        width: 100%;
+        flex: 1 1 55%;
     }
     
     .activities-cards img {
@@ -631,6 +617,29 @@ footer {
 
     .hebergements-cards-click, .populaires-cards-click {
         flex: 1 1 50%;
+    }
+
+    .icon-search {
+        display: block;
+        border-style: none;
+        background-color: var(--main-color);
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 1em;
+        padding: 15px 16px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    .filter-contain-text {
+        display: none;
+    }
+
+    .info-icon-box {
+        display: none;
     }
 
 }
