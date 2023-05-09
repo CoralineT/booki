@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
     <!-- Librairie Font Awesome-->
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Feuille de style CSS -->
         <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,18 +21,13 @@
             <nav class="header-nav">
                 <a href="#"><img class="logo" src="images/logo/Booki.png" alt="logo de Booki"></a>
                 <ul class="header-nav-list">
-                    <li><a class="header-nav-link" href="#">Hébergements</a></li>
-                    <li><a class="header-nav-link" href="#">Activités</a></li>
+                    <li><a class="header-nav-link" href="#hebergements">Hébergements</a></li>
+                    <li><a class="header-nav-link" href="#activites">Activités</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section class="section-search">
-                <div>
-                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <p>En plein centre-ville ou en pleine nature</p>
-                </div>
-                <form class="search-bar" method="get" action="">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form class="search-bar" method="get">
                     <div class="search-contain-icon">
                         <i class="search-icon fa-solid fa-location-dot"></i>
                     </div>
@@ -44,24 +37,26 @@
                 </form>
                 <div class="filter-bar">
                     <div class="filter-contain-text">
-                        <h3 class="filter-text">Filtres</h3>
+                       <p class="filter-text">Filtres</p>
                     </div>
-                    <button class="filter-btn">
-                        <i class="icon-color-blue icon-filter fa-solid fa-money-bill"></i>
-                        <h3 class="filter-btn-text">Économique</h3>
-                    </button>
-                    <button class="filter-btn">
-                        <i class="icon-color-blue icon-filter fa-solid fa-child"></i>
-                        <h3 class="filter-btn-text">Familial</h3>
-                    </button>
-                    <button class="filter-btn">
-                        <i class="icon-color-blue icon-filter fa-solid fa-heart"></i>
-                        <h3 class="filter-btn-text">Romantique</h3>
-                    </button>
-                    <button class="filter-btn">
-                        <i class="icon-color-blue icon-filter fa-solid fa-fire"></i>
-                        <h3 class="filter-btn-text">Nos pépites</h3>
-                    </button>
+                    <ul class="filter-list">
+                        <li class="filter-btn">
+                            <i class="icon-color-blue icon-filter fa-solid fa-money-bill"></i>
+                            <p class="filter-btn-text">Économique</p>
+                        </li>
+                        <li class="filter-btn">
+                            <i class="icon-color-blue icon-filter fa-solid fa-child"></i>
+                            <p class="filter-btn-text">Familial</p>
+                        </li>
+                        <li class="filter-btn">
+                            <i class="icon-color-blue icon-filter fa-solid fa-heart"></i>
+                            <p class="filter-btn-text">Romantique</p>
+                        </li>
+                        <li class="filter-btn">
+                            <i class="icon-color-blue icon-filter fa-solid fa-fire"></i>
+                            <p class="filter-btn-text">Nos pépites</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="info-contain">
                     <div class="info-icon-box">
@@ -69,10 +64,11 @@
                     </div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-            </section>
+        </header>
+        <main>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                         <div class="hebergements-cards">
                             <a href="#" class="hebergements-cards-click">
@@ -283,7 +279,7 @@
                 </section>
             </div>
 
-            <section class="activities">
+            <section id="activites" class="activities">
                 <h2 class="activities-title">Activités à Marseille</h2>
                 <div class="activities-cards">
                     <a class="activities-cards-click" href="#">
